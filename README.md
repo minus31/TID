@@ -24,3 +24,8 @@
 - 컨텐츠 들은 카테고리 형식으로 만든다.
 
 
+## Index
+
+* [LaTEX](https://github.com/minus31/TID/tree/master/LaTEX)
+
+  ​
