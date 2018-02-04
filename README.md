@@ -13,6 +13,9 @@
 * 데이터 사이언스 스쿨의 강의에서 발췌하는 내용 
 * 데이터 사이언스 분야에 대한 학습 내용 
 * 크고 작은 프로젝트
+* Package 설치 / Libraries 사용 시 발생 했던 이슈들과 그것을 해결했던 과정
+
+
 
 
 
@@ -27,5 +30,21 @@
 ## Index
 
 * [LaTEX](https://github.com/minus31/TID/tree/master/LaTEX)
+
+
+* [DataScienceSchool](https://github.com/minus31/DataScienceSchool)
+
+  - School 강의 정리 
+
+* [Algorithm Quiz](https://github.com/minus31/TID/tree/master/AlgorithmQuiz)
+
+  * Hackerrank
+  * Hellocoding 알고리즘
+
+  ​
+
+  ​
+
+  ​
 
   ​
