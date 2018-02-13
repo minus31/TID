@@ -39,12 +39,10 @@
 * [Algorithm Quiz](https://github.com/minus31/TID/tree/master/AlgorithmQuiz)
 
   * Hackerrank
+
   * Hellocoding 알고리즘
 
-  ​
+    ​
 
-  ​
+* 논문 컨퍼런스 (Session 1 ~ 8)
 
-  ​
-
-  ​
