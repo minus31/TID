@@ -6,7 +6,7 @@
 
 ### Pyenv  설정 시 (2 /4 , 2018) 
 
-pyenv 새로 만들려면, 그 환경에 얹고 싶은 파이썬 버전이나 아나콘다 버전을 pyenv 로 다운 받아야 그 버전으로 virtualenv 만들때 만들어진 다. 
+pyenv 새로 만들려면, 그 환경에 얹고 싶은 파이썬 버전이나 아나콘다 버전을 pyenv 로 다운 받아야 그 버전으로 virtualenv 만들때 만들어진다. 
 
 pyenv install —list
 
