@@ -1,0 +1,2 @@
+model_checkpoint_path: "Seq2Seqmodel_CRF.ckpt"
+all_model_checkpoint_paths: "Seq2Seqmodel_CRF.ckpt"
