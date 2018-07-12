@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# sorting up git large file log
+*.jar
