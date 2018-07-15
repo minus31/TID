@@ -1,3 +1,11 @@
+### .bashrc 와 .bash_profile 의 차이 
+
+* .bash_profile은 login shell이고 .bashrc는 not login shell
+* bash_profile은 서버에 로그인 할때 실행이 되고, .bashrc는 새로운 쉘이
+  생성될때 실행이 됩니다.
+
+
+
 ### pyenv 환경 Path (1 / 21, 2018)
 
 **/Users/MAC/.pyenv/versions/anaconda3-4.4.0/envs/python_al**
