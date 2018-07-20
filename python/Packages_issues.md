@@ -105,3 +105,20 @@ http://localhost:8888/nbextensions
 
 [nbextensions configurator github](https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator)
 
+
+
+
+
+### pyenv 다운로드와 초기 설정
+
+
+
+> - https://cjh5414.github.io/ubuntu-pyenv-virtualenv/
+
+
+
+
+
+### GPU on instance 설정
+
+> - https://medium.com/google-cloud/setting-up-tensorflow-gpu-on-google-cloud-instance-with-ubuntu-16-04-53cb6749b527
