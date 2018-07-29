@@ -77,18 +77,23 @@ back propagation에서 아래의 chain rule 따라 $\gamma$, $\beta$ 에 의한 
 
 <img src="https://www.dropbox.com/s/p6vhrjg3vsxoqk1/Screenshot%202018-07-26%2016.09.12.png?raw=1" width="400" height="">
 
-Test를 할때에는 평균 값은 = mini batch 간의 평균의 평균 값을,  분산값은 mini batch 분산의 평균을 사용 하되, 통계학적으로 Unbiased variance 에는 Bessel's correlation을 통해 보정해야 함으로 $\dfrac{m}{m-1}​$ (m이 커지면 1에 가까워진다.)
+Test를 할때에는 평균 값은 = mini batch 간의 평균의 평균 값을,  분산값은 mini batch 분산의 평균을 사용 하되, 통계학적으로 Unbiased variance 에는 Bessel's correlation을 통해 보정해야 함으로 $\dfrac{m}{m-1}$ (m이 커지면 1에 가까워진다.)
 
 #### 4. 자체적인 실험  
 
+ 따로 다른 데이터 셋에 대해 실험 하기보다, 지금 제가 개발 중인 모델의 BN을 적용하기 전과 적용한 후를 비교해 보았습니다. 결과는 아래와 같습니다. (BN 외에는 다른 조건을 모두 동일 하게 했습니다.)
 
+No BN             |  BN
+:-------------------------:|:-------------------------:
+![](https://www.dropbox.com/s/ktlioon0swyicd9/Screenshot%202018-07-27%2011.39.01.png?raw=1)  | ![](https://www.dropbox.com/s/30xjzff9femt8vb/Screenshot%202018-07-27%2011.58.52.png?raw=1) 
 
-#### 
+그런데…. 별 차이가 없고, BN을 적용 했을 때, 오히려 Validation_loss에 대해서는 더 변동이 심했습니다. 하지만 Training loss만 보면 BN을 적용했을 때,  훨씬 빨리 수렴했단 것을 알 수 있습니다. 사실 제가 만들고 있는 모델에 사용하는 데이터가 갯수도 적고, 컨디션도 나빠서 저렇게 나온 것 같습니다. 위 그래프로는 효과가 잘 안 보일 수 있겠지만, 개인적으로  모델을 계속 개발하는데에 있어서, BN을 적용한 뒤 훨씬 안정적인 학습을 하고 있습니다.
 
 ####  5. 누군가 있다면 질문하고 싶은 부분
 
-1. mini batch 로 분산 값을 구할 때, n-1로 나누어주어, Unbiased 된 분산값을 얻는 것이더 적절한 것 아닌가 ? 
-2. Normalization 시에 사용하는 배치의 분산이 '0'이 됬을 때, 문제가 생기는 것을 방지하는 작은 상수 $\epsilon$ 은 구현 시에 정확이 얼마의 값을 넣는가?
+1. Normalization 시에 사용하는 배치의 분산이 '0'이 됬을 때, 문제가 생기는 것을 방지하는 작은 상수 $\epsilon$ 은 구현 시에 정확이 얼마의 값을 넣는가?
+
+
 
 
 
